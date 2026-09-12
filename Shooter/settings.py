@@ -1,0 +1,58 @@
+import pygame
+
+WIDTH, HEIGHT = 1200, 550
+
+# 颜色
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+YELLOW = (255, 255, 0)
+RED = (255, 50, 50)
+GREEN = (50, 255, 50)
+BLUE = (50, 150, 255)
+ORANGE = (255, 165, 0)
+PURPLE = (200, 0, 200)
+CYAN = (0, 255, 255)
+MAGENTA = (255, 0, 255)
+
+# 敌人专属颜色
+ENEMY_COLORS = {
+    0: (255, 60, 60),      # 普通 - 亮红
+    1: (50, 255, 100),     # 追踪 - 亮绿
+    2: (30, 255, 255),     # 醉汉 - 亮青
+    3: (255, 140, 20),     # 旋风 - 亮橙
+    4: (0, 150, 255)       # 重装 - 亮蓝
+}
+
+# 敌人类型
+ENEMY_NORMAL = 0
+ENEMY_HOMING = 1
+ENEMY_DRUNK = 2
+ENEMY_TORNADO = 3
+ENEMY_HEAVY = 4
+
+# 道具类型
+POWERUP_RAPID = 0
+POWERUP_DOUBLE = 1
+POWERUP_MISSILE = 2          # 新增：导弹风暴
+
+# 游戏参数
+SHOOT_DELAY = 10
+RAPID_FIRE_DELAY = 3
+EFFECT_DURATION = 500
+SHOCKWAVE_COOLDOWN = 300
+SHOCKWAVE_RADIUS = 500
+
+# 穿透子弹参数
+PENETRATING_BULLET_SPEED = 9.85
+PENETRATING_TURN_RATE = 0.20
+MAX_PIERCE = 15
+
+MISSILE_MILESTONE_STEP = 500
+PIERCE_MILESTONE_STEP = 1000
+
+# 克隆（分身）参数
+CLONE_SCORE_INTERVAL = 750        
+CLONE_AIM_DELAY = 120                 
+CLONE_BULLET_SPEED = 8.5           
+
+ENEMY_SCORE_BASE = 10          # 基础击杀分数
