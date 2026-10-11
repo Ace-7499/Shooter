@@ -1,2 +1,2 @@
-# Game
-Create the games in this repository
+# Shooter
+A game
